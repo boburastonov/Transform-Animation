@@ -19,15 +19,46 @@ body{
     margin: 0;
     font-size: 16px;
     line-height: 1.5;
+    background-image: url(../wall.jpg);
+    background-size: cover;
+    background-position: center;
 }
 .container{
     width: 100%;
-    max-width: 1250px;
-    padding-left: 25px;
-    padding-right: 25px;
+    max-width: 400px;
     margin-left: auto;
     margin-right: auto;
 }
 .main-content{
     flex-grow: 1;
+}
+
+.box-container{
+    display: flex;
+    align-items: center;
+    border: 20px ridge rgb(165, 91, 42);
+    margin: 50px auto;
+    box-shadow: 15px 0px 5px rgba(0, 0, 0, .3);
+    background-image: url('../interior.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.box{
+    width: 200px;
+    height: 500px;
+    border: 20px ridge rgb(165, 91, 42);
+    background-color: rgba(0, 0, 0, .8);
+    transition: transform 10s ease;
+}
+.box-1{
+    transform-origin: left center;
+}
+.container:hover .box-1{
+    transform: perspective(2000px) rotateY(-125deg);
+}
+.box-2{
+    transform-origin: right center;
+}
+.container:hover .box-2{
+    transform: perspective(2000px) rotateY(125deg);
 }
