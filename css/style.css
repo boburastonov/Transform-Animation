@@ -48,7 +48,7 @@ body{
     height: 500px;
     border: 20px ridge rgb(165, 91, 42);
     background-color: rgba(0, 0, 0, .8);
-    transition: transform 10s ease;
+    transition: transform .5s ease;
 }
 .box-1{
     transform-origin: left center;
